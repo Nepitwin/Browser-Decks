@@ -1,0 +1,55 @@
+ifndef::imagesdir[:imagesdir: img]
+
+# Browser-Decks
+
+*****
+Browser-Decks is a multi-platform browser environment to keep multiple websites open at the same time.
+
+  - You know the problem or? You have multiple your web browser open and oriented this to your screen parralele. However, you will not be able to set the window to full screen, because it will then take up the entire monitor.
+    - Browser-Deck solves this problem by. 
+    - You are able to watch multiple streams in parallel and switch to full screen.
+*****
+
+## For whom is the tool suitable?
+
+*****
+For all those who want to manage multiple browser instances in one at the same time. Here Browser Decks can be used for streaming in private or also for monitoring systems for development teams.
+
+image::example.png[alt=Example One,width=640]
+image::example_two.png[alt=Example Two,width=640]
+*****
+
+## Privacy
+
+*****
+  - Browser-Decks is just an internal Microsoft Edge WebView 2 browser from Microsoft. 
+    - https://developer.microsoft.com/en-us/microsoft-edge/webview2/
+    - https://learn.microsoft.com/en-us/microsoft-edge/webview2/concepts/data-privacy?tabs=dotnetcsharp
+*****
+
+## What is required?
+
+*****
+  - .Net Desktop Runtime 7.X x86/x64
+  - Installed WebView2-Runtime (Generally installed on Windows 10 and 11)
+*****
+
+## Future Features
+
+*****
+  - Individual Fullscreen Functionality for each Browser
+  - Currently a 4x4 Window can be set
+  - Hotkeys 
+    - F9 to Hide or Visible URL field for each Browser
+*****
+
+## Potential Future Features
+
+*****
+  - Individual Grid-Management for Window Handling (2x2, 6x6, 1x2 etc)
+  - Individual Window-Management
+  - Incognito mode switch
+  - Default Url-Configuration on startup 
+  - Setup
+  - Updates
+*****
