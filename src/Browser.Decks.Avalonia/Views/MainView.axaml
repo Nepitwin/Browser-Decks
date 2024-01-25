@@ -1,0 +1,29 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:Browser.Decks.Avalonia.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Browser.Decks.Avalonia.Views.MainView"
+             x:DataType="vm:MainViewModel">
+    <Design.DataContext>
+         <!-- This only sets the DataContext for the previewer in an IDE,
+        to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainViewModel />
+    </Design.DataContext>
+
+	<UserControl.KeyBindings>
+		<KeyBinding Gesture="ENTER" Command="{Binding MyCommand}" />
+	</UserControl.KeyBindings>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBox Grid.Row="0" Text="{Binding Path=StringUrl, Mode=TwoWay}" Height="30" />
+        <WebView Grid.Row="1" Url="{Binding Path=Url, Mode=TwoWay}" />
+	</Grid>
+
+</UserControl>
