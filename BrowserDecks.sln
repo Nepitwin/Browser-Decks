@@ -7,23 +7,50 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Browser.Decks.Avalonia", "s
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Browser.Decks.Avalonia.Desktop", "src\Browser.Decks.Avalonia.Desktop\Browser.Decks.Avalonia.Desktop.csproj", "{2F18D4CF-C02B-4AC9-A59B-B9A1C71C165A}"
 EndProject
+Project("{840C416C-B8F3-42BC-B0DD-F6BB14C9F8CB}") = "Browser.Decks.Avalonia.Advanced.Installer.Setup", "src\Browser.Decks.Avalonia.Advanced.Installer.Setup\Browser.Decks.Avalonia.Advanced.Installer.Setup.aiproj", "{91C2496B-AA7B-4E19-A8CA-2AC2852DEED4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code", "Code", "{C5E10476-9CB3-4901-88A7-4E4A5624FF56}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Setup", "Setup", "{BF081C1F-12FB-4742-AF71-50018BAE18EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{6619CE64-A010-41C2-A83E-C652C89B42B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Windows", "Windows", "{EC4ECB68-9050-4582-B88B-D42F3B2C40BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		DefaultBuild|Any CPU = DefaultBuild|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{F8B242D5-6780-46D4-9609-BB9F04E61C45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F8B242D5-6780-46D4-9609-BB9F04E61C45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8B242D5-6780-46D4-9609-BB9F04E61C45}.DefaultBuild|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8B242D5-6780-46D4-9609-BB9F04E61C45}.DefaultBuild|Any CPU.Build.0 = Debug|Any CPU
 		{F8B242D5-6780-46D4-9609-BB9F04E61C45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8B242D5-6780-46D4-9609-BB9F04E61C45}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2F18D4CF-C02B-4AC9-A59B-B9A1C71C165A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2F18D4CF-C02B-4AC9-A59B-B9A1C71C165A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F18D4CF-C02B-4AC9-A59B-B9A1C71C165A}.DefaultBuild|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F18D4CF-C02B-4AC9-A59B-B9A1C71C165A}.DefaultBuild|Any CPU.Build.0 = Debug|Any CPU
 		{2F18D4CF-C02B-4AC9-A59B-B9A1C71C165A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F18D4CF-C02B-4AC9-A59B-B9A1C71C165A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91C2496B-AA7B-4E19-A8CA-2AC2852DEED4}.Debug|Any CPU.ActiveCfg = DefaultBuild
+		{91C2496B-AA7B-4E19-A8CA-2AC2852DEED4}.Debug|Any CPU.Build.0 = DefaultBuild
+		{91C2496B-AA7B-4E19-A8CA-2AC2852DEED4}.DefaultBuild|Any CPU.ActiveCfg = DefaultBuild
+		{91C2496B-AA7B-4E19-A8CA-2AC2852DEED4}.DefaultBuild|Any CPU.Build.0 = DefaultBuild
+		{91C2496B-AA7B-4E19-A8CA-2AC2852DEED4}.Release|Any CPU.ActiveCfg = DefaultBuild
+		{91C2496B-AA7B-4E19-A8CA-2AC2852DEED4}.Release|Any CPU.Build.0 = DefaultBuild
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F8B242D5-6780-46D4-9609-BB9F04E61C45} = {C5E10476-9CB3-4901-88A7-4E4A5624FF56}
+		{2F18D4CF-C02B-4AC9-A59B-B9A1C71C165A} = {C5E10476-9CB3-4901-88A7-4E4A5624FF56}
+		{91C2496B-AA7B-4E19-A8CA-2AC2852DEED4} = {EC4ECB68-9050-4582-B88B-D42F3B2C40BC}
+		{EC4ECB68-9050-4582-B88B-D42F3B2C40BC} = {BF081C1F-12FB-4742-AF71-50018BAE18EF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {64726819-BBE9-414B-A3F8-7DAB076EA045}
