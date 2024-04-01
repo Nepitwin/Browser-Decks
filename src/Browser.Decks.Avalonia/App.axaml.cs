@@ -21,19 +21,20 @@ public partial class App : Application
         // Without this line you will get duplicate validations from both Avalonia and CT
         BindingPlugins.DataValidators.RemoveAt(0);
 
-        if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
+        switch (ApplicationLifetime)
         {
-            desktop.MainWindow = new MainWindow
-            {
-                DataContext = new MainViewModel()
-            };
-        }
-        else if (ApplicationLifetime is ISingleViewApplicationLifetime singleViewPlatform)
-        {
-            singleViewPlatform.MainView = new MainView
-            {
-                DataContext = new MainViewModel()
-            };
+            case IClassicDesktopStyleApplicationLifetime desktop:
+                desktop.MainWindow = new MainWindow
+                {
+                    DataContext = new MainViewModel()
+                };
+                break;
+            case ISingleViewApplicationLifetime singleViewPlatform:
+                singleViewPlatform.MainView = new MainView
+                {
+                    DataContext = new MainViewModel()
+                };
+                break;
         }
 
         base.OnFrameworkInitializationCompleted();
@@ -41,9 +42,8 @@ public partial class App : Application
 
     public override void RegisterServices()
     {
-        base.RegisterServices();
-
         // if you use only WebView  
         AvaloniaWebViewBuilder.Initialize(default);
+        base.RegisterServices();
     }
 }

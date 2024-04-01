@@ -1,6 +1,6 @@
-﻿using System;
+﻿using ReactiveUI;
+using System;
 using System.Windows.Input;
-using Prism.Commands;
 
 namespace Browser.Decks.Avalonia.ViewModels;
 
@@ -16,7 +16,7 @@ public class MainViewModel : ViewModelBase
 
     public MainViewModel()
     {
-        MyCommand = new DelegateCommand(() =>
+        MyCommand = ReactiveCommand.Create(() =>
         {
             if (Uri.TryCreate(StringUrl, UriKind.Absolute, out var newUrl))
             {

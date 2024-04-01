@@ -12,15 +12,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Avalonia" Version="$(AvaloniaVersion)" />
-    <PackageReference Include="Avalonia.Themes.Fluent" Version="$(AvaloniaVersion)" />
-    <PackageReference Include="Avalonia.Fonts.Inter" Version="$(AvaloniaVersion)" />
+    <PackageReference Include="Avalonia" Version="11.0.10" />
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
 
     <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
-    <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="$(AvaloniaVersion)" />
-    <PackageReference Include="Prism.Avalonia" Version="8.1.97.11000" />
-    <PackageReference Include="Prism.DryIoc.Avalonia" Version="8.1.97.11000" />
+    <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.10" />
+    <PackageReference Include="Material.Avalonia" Version="3.5.0" />
+    <PackageReference Include="Material.Avalonia.DataGrid" Version="3.5.0" />
+    <PackageReference Include="Material.Avalonia.Dialogs" Version="3.5.0" />
+    <PackageReference Include="Material.Icons.Avalonia" Version="2.1.0" />
+    <PackageReference Include="ReactiveUI" Version="19.6.1" />
     <PackageReference Include="WebView.Avalonia" Version="11.0.0.1" />
     <PackageReference Include="WebView.Avalonia.Desktop" Version="11.0.0.1" />
   </ItemGroup>
