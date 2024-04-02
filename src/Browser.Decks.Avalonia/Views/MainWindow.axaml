@@ -16,7 +16,7 @@
 			<ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <views:SettingsView Grid.Column="0" />
+        <views:SettingsNavbar Grid.Column="0" />
 		<views:MainView Grid.Column="1" />
 	</Grid>
 </Window>

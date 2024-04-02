@@ -2,9 +2,9 @@ using Avalonia.Controls;
 
 namespace Browser.Decks.Avalonia.Views
 {
-    public partial class SettingsView : UserControl
+    public partial class SettingsNavbar : UserControl
     {
-        public SettingsView()
+        public SettingsNavbar()
         {
             InitializeComponent();
         }
